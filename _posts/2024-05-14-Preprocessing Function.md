@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Preprocessing Function"
-date:   {{data}}{{time}}
+date:   2025-05-14
 categories: Data
 ---
 
