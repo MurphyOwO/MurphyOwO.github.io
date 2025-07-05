@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Zheng Liu(刘政)
+title: Zheng Liu
 permalink: /about/
 ---
 
