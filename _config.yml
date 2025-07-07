@@ -32,7 +32,7 @@ markdown: kramdown
 
 kramdown:
   input: GFM                  # GitHub Flavored Markdown
-  hard_wrap: false            # 是否把段内换行渲染成 <br>
+  hard_wrap: false      r      # 是否把段内换行渲染成 <b>
   syntax_highlighter: rouge   # 代码高亮器
 
 theme: minima
