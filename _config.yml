@@ -29,6 +29,14 @@ github_username:  MurphyOwO
 
 # Build settings
 markdown: kramdown
+
+kramdown:
+  input: GFM                  # GitHub Flavored Markdown
+  hard_wrap: false            # 是否把段内换行渲染成 <br>
+  syntax_highlighter: rouge   # 代码高亮器
+  syntax_highlighter_opts:
+    line_numbers: true        # 代码块显示行号
+
 theme: minima
 plugins:
   - jekyll-feed
