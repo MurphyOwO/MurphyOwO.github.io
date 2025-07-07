@@ -8,6 +8,7 @@
 ###### pdb常用命令
 
 当停留在某个地方时,pdb提示符本身通常会显示类似:
+
 	/path/to/my_script.py(42)<function_name>()
 
 	-> some_python_code()
@@ -15,15 +16,22 @@
 文件+行号+当前函数名
 
 查看当前位置前后11行代码`l`,
+
 执行下一行不进入函数体`n`,
+
 执行下一行进入函数体`s`,
+
 查看当前文件路径(栈)`where|w`,
+
 查看当前帧的__file__`p __file__`,
+
 在指定文件+行设置断点`b 文件.py:行号`,
+
 清除断点`cl`.
 
 ###### pdbpp
 pdbpp相比较于pdb增加了自动补全和语法高亮
+
 更加友好
 
 #### Github
@@ -39,11 +47,13 @@ pdbpp相比较于pdb增加了自动补全和语法高亮
 或者在不同的路径下配置不同的用户名和邮箱去覆盖global配置
 
 在不同的本地仓库关联远程仓库URL里写对Host别名
+
 进入不同的路径就可以进行push隔离
 
 ###### ~/.gitconfig
 
 .gtconfig是全局的
+
 两个账号主要影响两个东西
 - SSH Key 这个通过.ssh/config区分
 - 提交记录的user.email和user.name
@@ -63,7 +73,6 @@ git config user.email "work@email.com"
 [user]
 	name = Work Name
 	email = work@email.com
-
 ```
 
 
@@ -77,6 +86,7 @@ SSH会按顺序尝试私钥，如果之前使用过则SSH会进行自动连接
 - 定义别名
 - 用不同的key对应不同的目标
 - 指定特殊的端口、代理、转发、选项等
+
 ```bash
 Host github-personal
   HostName github.com
@@ -87,13 +97,15 @@ Host github-work
   HostName github.com
   User git
   IdentityFile ~/.ssh/id_ed25519_work
-
 ```
+
 这样就可以用
+
 ```bash
 ssh -T github-personal
 ssh -T github-work
 ```
+
 分别用不同的key进行连接github
 
 
